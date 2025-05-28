@@ -11,6 +11,10 @@ composeBom = "2024.04.01"
 datastoreCoreAndroid = "1.1.7"
 roomCommonJvm = "2.7.1"
 adapters = "3.2.0-alpha11"
+navigationRuntimeAndroid = "2.9.0"
+navigationComposeAndroid = "2.9.0"
+roomRuntimeAndroid = "2.7.1"
+animationCoreAndroid = "1.7.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,6 +34,10 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 androidx-datastore-core-android = { group = "androidx.datastore", name = "datastore-core-android", version.ref = "datastoreCoreAndroid" }
 androidx-room-common-jvm = { group = "androidx.room", name = "room-common-jvm", version.ref = "roomCommonJvm" }
 androidx-adapters = { group = "androidx.databinding", name = "adapters", version.ref = "adapters" }
+androidx-navigation-runtime-android = { group = "androidx.navigation", name = "navigation-runtime-android", version.ref = "navigationRuntimeAndroid" }
+androidx-navigation-compose-android = { group = "androidx.navigation", name = "navigation-compose-android", version.ref = "navigationComposeAndroid" }
+androidx-room-runtime-android = { group = "androidx.room", name = "room-runtime-android", version.ref = "roomRuntimeAndroid" }
+androidx-animation-core-android = { group = "androidx.compose.animation", name = "animation-core-android", version.ref = "animationCoreAndroid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
