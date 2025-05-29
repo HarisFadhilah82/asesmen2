@@ -1,3 +1,5 @@
+package com.haris0035.asesmen2.ui.screens
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -43,9 +45,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-
-import com.haris0035.asesmen2.data.model.RecycleBin // Import kelas model RecycleBin
-import com.haris0035.asesmen2.data.model.Priority // Import enum Priority kustom Anda
+import com.haris0035.asesmen2.data.model.RecycleBin
+import com.haris0035.asesmen2.data.model.Priority
 
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -53,11 +54,9 @@ import java.util.Locale
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun RecycleBinScreen(
-    // Ubah List<Screen.RecycleBin> menjadi List<RecycleBin>
     deletedTasks: List<RecycleBin>,
     isLoading: Boolean,
     error: String?,
-    // Ubah parameter lambda menjadi (RecycleBin) -> Unit
     onRestoreTask: (RecycleBin) -> Unit,
     onPermanentlyDeleteTask: (RecycleBin) -> Unit,
     onClearRecycleBin: () -> Unit,

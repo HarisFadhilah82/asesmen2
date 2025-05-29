@@ -1,17 +1,18 @@
-package org.haris0035.mobpro1.data
+package com.haris0035.asesmen2.data
 
 import android.content.Context
+import androidx.databinding.adapters.Converters
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import org.haris0035.mobpro1.data.dao.CategoryDao
-import org.haris0035.mobpro1.data.dao.RecycleBinDao
-import org.haris0035.mobpro1.data.dao.TaskDao
-import org.haris0035.mobpro1.data.model.Category
-import org.haris0035.mobpro1.data.model.RecycleBin
-import org.haris0035.mobpro1.data.model.Task
-import org.haris0035.mobpro1.util.Converters
+import com.haris0035.asesmen2.data.dao.RecycleBinDao
+import com.haris0035.asesmen2.data.dao.TaskDao
+import com.haris0035.asesmen2.data.model.Category
+import com.haris0035.asesmen2.data.model.RecycleBin
+import com.haris0035.asesmen2.data.model.Task
+import com.haris0035.mobpro1.data.dao.CategoryDao
+
 
 @Database(entities = [Task::class, RecycleBin::class, Category::class], version = 2, exportSchema = false)
 @TypeConverters(Converters::class)

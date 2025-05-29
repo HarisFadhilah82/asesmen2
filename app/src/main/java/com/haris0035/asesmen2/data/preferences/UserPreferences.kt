@@ -1,4 +1,4 @@
-package org.haris0035.mobpro1.data.preferences
+package com.haris0035.asesmen2.data.preferences
 
 import android.content.Context
 import androidx.datastore.core.DataStore
@@ -49,4 +49,4 @@ class UserPreferences(private val context: Context) {
             preferences[LIST_VIEW_TYPE] = viewType
         }
     }
-} 
+}

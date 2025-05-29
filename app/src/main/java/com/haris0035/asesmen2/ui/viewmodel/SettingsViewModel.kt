@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
-import org.haris0035.mobpro1.data.preferences.UserPreferences
+import com.haris0035.asesmen2.data.preferences.UserPreferences
 
 class SettingsViewModel(private val userPreferences: UserPreferences) : ViewModel() {
     val themeColor: Flow<Int> = userPreferences.themeColor

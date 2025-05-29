@@ -45,6 +45,7 @@ import com.haris0035.asesmen2.ui.theme.Orange
 import com.haris0035.asesmen2.ui.theme.Purple
 import com.haris0035.asesmen2.ui.theme.Red
 import com.haris0035.asesmen2.ui.viewmodel.TaskViewModel
+
 import java.util.Date
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -70,7 +71,6 @@ fun AddEditCategoryScreen(
         Red.toArgb()
     )
     
-    // Periksa jika kategori ditemukan saat mode edit
     LaunchedEffect(categoryId) {
         if (isEditMode && category == null) {
             onNavigateBack()

@@ -58,6 +58,8 @@ dependencies {
     implementation(libs.androidx.animation.core.android)
     implementation(libs.androidx.animation.core.android)
     implementation(libs.androidx.animation.core.android)
+    implementation ("androidx.datastore:datastore-preferences:1.0.0")
+    implementation(libs.transport.api)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
